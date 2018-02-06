@@ -38,12 +38,18 @@
                             <img class="card-img-top" src="bitcoin-logo.png" alt="Logo">
                         </div>
                         <h4 class="card-title">{{currency.name}}</h4>
-                        <p class="card-text">£ {{currency.price_gbp | number:2}}</p>
+                        <p class="card-text">
+                            £ {{currency.price_gbp | number:2}}
+
+                            <span class="ml-3"  ng-class="vm.setPercentChangeStyle(currency.percent_change_24h)">
+                                {{currency.percent_change_24h}}%
+                            </span>
+
+
+                        </p>
                     </div>
                 </div>
-            </div>
-
-
+            </div><!-- Column end -->
         </div><!-- Row end -->
     </div><!-- Container end -->
 
@@ -67,6 +73,10 @@
 
     <!-- Services -->
     <script src="app/services/currencyGetAPI.js"></script>
+
+
+    <!-- Other JS scripts -->
+    <script src="app/other/javascript.js"></script>
 
 </body>
 

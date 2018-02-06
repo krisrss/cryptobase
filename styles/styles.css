@@ -27,7 +27,54 @@ body{
 }
 
 
+
+/*Postivie percentage value style*/
+.positive-value{
+    color: #00ff00;
+}
+
+.positive-value:before {
+    display: none; 
+    font-family: "Font Awesome 5 Solid"; 
+    content: "\f062";
+}
+
+.fa-arrow-up{
+    margin-right: 4px;
+}
+
+
+/*Negative percentage value style*/
+.negative-value{
+    color: #ff4c4c;
+}
+.negative-value:before {
+    display: none; 
+    font-family: "Font Awesome 5 Solid"; 
+    content: "\f063";
+}
+.fa-arrow-down{
+    margin-right: 4px;
+}
+
+
+/*Zero percentage value style*/
+.zero-value{
+    color:#a8a8a8;
+}
+
+
+
+
+
+
+
 /* Boostrap overrides */
 #bootstrap-card-override{
     background-color: inherit;
 }
+
+
+
+
+

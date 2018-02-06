@@ -7,10 +7,29 @@ function currencyView(cryptoGet) {
 	var cryptoListSize = 8;
 
 
-    function onSuccess(data) {
-    	vm.cryptoCurrency = data;
-    }
-	cryptoGet.getCurrencyList(cryptoListSize).then(onSuccess);
+  	// Retrives data from API
+	cryptoGet.getCurrencyList(cryptoListSize)
+		.then(function(data) {
+			vm.cryptoCurrency = data;
+		}
+	);
+
+
+
+
+	vm.setPercentChangeStyle =  function(value){
+		if(value > 0){
+			return vm.percentStyle = "positive-value";
+		}
+		else if(value < 0){
+			return vm.percentStyle = "negative-value";
+		}
+		else if(value === 0){
+			return vm.percentStyle = "zero-value";
+		}
+	}
+
+
 
 };
 
