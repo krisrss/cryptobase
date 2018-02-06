@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body ng-app="CryptoBase">
 
     <div class="container text-center">
         
@@ -28,107 +28,17 @@
         </ul>
         <!--/navbar-->
 
-        <div class="row justify-content-center mt-3">
+        <div class="row justify-content-center mt-3" ng-controller="CurrencyView as vm">
 
-            <div class="col-7 col-md-5 col-lg-3">
+            <div class="col-7 col-md-5 col-lg-3" ng-repeat="currency in vm.cryptoCurrency">
+                <h1></h1>
                 <div class="card mb-4" id="bootstrap-card-override">
                     <div class="card-block m-5">
                         <div class="image-box mx-auto mb-3">
                             <img class="card-img-top" src="bitcoin-logo.png" alt="Logo">
                         </div>
-                        <h4 class="card-title">Bitcoin</h4>
-                        <p class="card-text">$$$$$$$$$</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-7 col-md-5 col-lg-3">
-                    <div class="card mb-4" id="bootstrap-card-override">
-                        <div class="card-block m-5">
-                        <div class="image-box mx-auto mb-3">
-                            <img class="card-img-top" src="bitcoin-logo.png" alt="Logo">
-                        </div>
-                        <h4 class="card-title">Bitcoin</h4>
-                        <p class="card-text">$$$$$$$$$</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-7 col-md-5 col-lg-3">
-                    <div class="card mb-4" id="bootstrap-card-override">
-                        <div class="card-block m-5">
-                        <div class="image-box mx-auto mb-3">
-                            <img class="card-img-top" src="bitcoin-logo.png" alt="Logo">
-                        </div>
-                        <h4 class="card-title">Bitcoin</h4>
-                        <p class="card-text">$$$$$$$$$</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-7 col-md-5 col-lg-3">
-                    <div class="card mb-4" id="bootstrap-card-override">
-                        <div class="card-block m-5">
-                        <div class="image-box mx-auto mb-3">
-                            <img class="card-img-top" src="bitcoin-logo.png" alt="Logo">
-                        </div>
-                        <h4 class="card-title">Bitcoin</h4>
-                        <p class="card-text">$$$$$$$$$</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-7 col-md-5 col-lg-3">
-                    <div class="card mb-4" id="bootstrap-card-override">
-                        <div class="card-block m-5">
-                        <div class="image-box mx-auto mb-3">
-                            <img class="card-img-top" src="bitcoin-logo.png" alt="Logo">
-                        </div>
-                        <h4 class="card-title">Bitcoin</h4>
-                        <p class="card-text">$$$$$$$$$</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-7 col-md-5 col-lg-3">
-                    <div class="card mb-4" id="bootstrap-card-override">
-                        <div class="card-block m-5">
-                        <div class="image-box mx-auto mb-3">
-                            <img class="card-img-top" src="bitcoin-logo.png" alt="Logo">
-                        </div>
-                        <h4 class="card-title">Bitcoin</h4>
-                        <p class="card-text">$$$$$$$$$</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-7 col-md-5 col-lg-3">
-                    <div class="card mb-4" id="bootstrap-card-override">
-                        <div class="card-block m-5">
-                        <div class="image-box mx-auto mb-3">
-                            <img class="card-img-top" src="bitcoin-logo.png" alt="Logo">
-                        </div>
-                        <h4 class="card-title">Bitcoin</h4>
-                        <p class="card-text">$$$$$$$$$</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-7 col-md-5 col-lg-3">
-                    <div class="card mb-4" id="bootstrap-card-override">
-                        <div class="card-block m-5">
-                        <div class="image-box mx-auto mb-3">
-                            <img class="card-img-top" src="bitcoin-logo.png" alt="Logo">
-                        </div>
-                        <h4 class="card-title">Bitcoin</h4>
-                        <p class="card-text">$$$$$$$$$</p>
+                        <h4 class="card-title">{{currency.name}}</h4>
+                        <p class="card-text">£ {{currency.price_gbp | number:2}}</p>
                     </div>
                 </div>
             </div>
@@ -149,6 +59,15 @@
 
     <!-- Application Script -->
     <script src="app/app.js"></script>
+
+
+    <!-- Controllers -->
+    <script src="app/controllers/currencyView.js"></script>
+
+
+    <!-- Services -->
+    <script src="app/services/currencyGetAPI.js"></script>
+
 </body>
 
 </html>
