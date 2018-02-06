@@ -2,7 +2,7 @@
 "use strict";
 angular.module("CryptoBase").controller("CurrencyView", currencyView);
 
-function currencyView(cryptoGet) {
+function currencyView(cryptoGet,setSource) {
 	var vm = this;
 	var cryptoListSize = 8;
 
@@ -13,6 +13,11 @@ function currencyView(cryptoGet) {
 			vm.cryptoCurrency = data;
 		}
 	);
+
+
+	vm.getLogoSrc = function(logoName){
+		return setSource.setImageSource(logoName);
+	}
 
 
 
