@@ -1,17 +1,22 @@
 <div class="row justify-content-center mt-3">
 	<div class="col-9 col-md-5 col-lg-3" ng-repeat="currency in vm.cryptoCurrency">
-		<div class="card mb-4" id="bootstrap-card-override">
-			<div class="card-block m-5">
-				<div class="image-box mx-auto mb-3">
-					<img class="card-img-top" ng-src="{{vm.getLogoSrc(currency.symbol)}}" alt="Logo">
+		<div class="card mb-4" id="bootstrap-card-override" >
+
+			<a ui-sref="details({currencyId : currency.id})">
+
+				<div class="card-block m-5" id="override-link-color">
+					<div class="image-box mx-auto mb-3">
+						<img class="card-img-top" ng-src="{{vm.getLogoSrc(currency.symbol)}}" alt="Logo">
+					</div>
+					<h4 class="card-title">{{currency.name}}</h4>
+					<p class="card-text">£{{currency.price_gbp | number:2}}
+						<span class="ml-3"  ng-class="vm.setPercentChangeStyle(currency.percent_change_24h)">
+							{{currency.percent_change_24h}}%
+						</span>
+					</p>
 				</div>
-				<h4 class="card-title">{{currency.name}}</h4>
-				<p class="card-text">£{{currency.price_gbp | number:2}}
-					<span class="ml-3"  ng-class="vm.setPercentChangeStyle(currency.percent_change_24h)">
-						{{currency.percent_change_24h}}%
-					</span>
-				</p>
-			</div>
+			</a>
+
 		</div><!-- Card end -->
 	</div><!-- Column end -->
-	</div><!-- Row end -->
+</div><!-- Row end -->

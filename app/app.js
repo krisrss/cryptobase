@@ -17,6 +17,12 @@ cryptoBase.config(["$stateProvider","$urlRouterProvider",
 			controller : "CurrencyView as vm"
 		})
 
+
+		.state("details",{
+			url: "/details/:currencyId",
+			templateUrl: "app/currencyDetails.html"
+		})
+
 	}]
 );
 
