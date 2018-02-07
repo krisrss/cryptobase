@@ -8,7 +8,7 @@
 
     <!-- Style sheets -->
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -21,38 +21,16 @@
     <div class="container text-center">
         
         <!--navbar-->
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center mb-5">
             <li class="nav-item">
                 <span class="logo">Crypto<i class="fab fa-superpowers"></i>Base</span>
             </li>
         </ul>
         <!--/navbar-->
 
-        <div class="row justify-content-center mt-3" ng-controller="CurrencyView as vm">
+        <div ui-view></div>
 
-            <div class="col-9 col-md-5 col-lg-3" ng-repeat="currency in vm.cryptoCurrency">
-                <div class="card mb-4" id="bootstrap-card-override">
-                    <div class="card-block m-5">
-                        <div class="image-box mx-auto mb-3">
-                            <img class="card-img-top" ng-src="{{vm.getLogoSrc(currency.symbol)}}" alt="Logo">
-                        </div>
-                        <h4 class="card-title">{{currency.name}}</h4>
-                        <p class="card-text">
-                            £{{currency.price_gbp | number:2}}
-
-                            <span class="ml-3"  ng-class="vm.setPercentChangeStyle(currency.percent_change_24h)">
-                                {{currency.percent_change_24h}}%
-                            </span>
-
-
-                        </p>
-                    </div>
-                </div>
-            </div><!-- Column end -->
-        </div><!-- Row end -->
     </div><!-- Container end -->
-
-
 
 
     <!--JS CDN's -->
@@ -73,6 +51,10 @@
     <!-- Services -->
     <script src="app/services/currencyGetAPI.js"></script>
     <script src="app/services/setLogoSrc.js"></script>
+
+
+    <!-- UI-Router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
 
 
     <!-- Other JS scripts -->
