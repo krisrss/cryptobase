@@ -20,11 +20,19 @@ cryptoBase.config(["$stateProvider","$urlRouterProvider",
 
 		.state("details",{
 			url: "/details/:currencyId",
-			templateUrl: "app/currencyDetails.html"
-		})
+			templateUrl: "app/currencyDetails.html",
+			controller : "CurrencyDetails as vm",
 
-	}]
-);
+
+			resolve : {
+				getCryptoDetails: function(cryptoGet, $stateParams){
+					var currencyId = $stateParams.currencyId;
+					return cryptoGet.getSingleCurrency(currencyId);
+				}
+			}
+		})
+	}
+]); 
 
 
 

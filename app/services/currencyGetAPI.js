@@ -9,8 +9,17 @@ var cryptoGet = function($http) {
         })
     };
 
+    var getSingleCurrency = function(currencyId){
+    	return $http.get("https://api.coinmarketcap.com/v1/ticker/"+ currencyId +"/?convert=GBP&limit=1")
+    	.then(function(response){
+    		return response.data;
+    	})
+    };
+
     return {
-        getCurrencyList : getCurrencyList
+        getCurrencyList : getCurrencyList,
+        getSingleCurrency : getSingleCurrency
+
     }
 
 };

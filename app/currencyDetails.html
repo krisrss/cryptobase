@@ -1,1 +1,22 @@
-<h1>Currency Details Page</h1>
+
+
+<div class="row justify-content-center mt-5">
+	<div class="col-6">
+		<img ng-src="{{vm.getLogoSrc(vm.cryptoCurrency.symbol)}}" alt="Logo">
+		<h1>{{vm.cryptoCurrency.name}}</h1>
+	</div>
+
+	<div class="col-6">
+		<h4>Current Price</h4>
+		<h5>£ {{vm.cryptoCurrency.price_gbp | number:2}}</h5>
+		<br>
+
+		<h4>Circulating Supply</h4>
+		<h5>{{vm.cryptoCurrency.available_supply}} {{vm.cryptoCurrency.symbol}}</h5>
+		<br>
+
+		<h4>Market Cap</h4>
+		<h5>£ {{vm.cryptoCurrency.market_cap_gbp}}</h5>
+
+	</div>
+</div>
