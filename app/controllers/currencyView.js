@@ -2,7 +2,7 @@
 "use strict";
 angular.module("CryptoBase").controller("CurrencyView", currencyView);
 
-function currencyView(cryptoGet,setSource) {
+function currencyView(cryptoGet,setSource,setPercentStyle) {
 	var vm = this;
 	var cryptoListSize = 8;
 
@@ -20,19 +20,9 @@ function currencyView(cryptoGet,setSource) {
 	}
 
 
-
-
 	vm.setPercentChangeStyle =  function(value){
-		if(value > 0){
-			return vm.percentStyle = "positive-value";
-		}
-		else if(value < 0){
-			return vm.percentStyle = "negative-value";
-		}
-		else if(value === 0){
-			return vm.percentStyle = "zero-value";
-		}
-	}
+		return setPercentStyle.setStyle(value);
+	};
 
 
 

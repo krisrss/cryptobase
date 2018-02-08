@@ -1,22 +1,65 @@
 
 
 <div class="row justify-content-center mt-5">
-	<div class="col-6">
-		<img ng-src="{{vm.getLogoSrc(vm.cryptoCurrency.symbol)}}" alt="Logo">
-		<h1>{{vm.cryptoCurrency.name}}</h1>
+
+
+
+	<div class="col-12 col-md-6">
+		<img class="big-logo" ng-src="{{vm.getLogoSrc(vm.cryptoCurrency.symbol)}}" alt="Logo">
+		<span id="crypto-header">{{vm.cryptoCurrency.name}}</span>
+
+
+		<div id="crypto-rank">
+			<span>Rank</span>
+			<span>{{vm.cryptoCurrency.rank}}</span>
+		</div>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id libero dui. Donec id imperdiet sapien. Aenean nunc velit, blandit et efficitur nec, iaculis at nisi. Nam id ex erat. Pellentesque eget tortor arcu. Nulla imperdiet interdum sagittis. Suspendisse id dapibus ante, sit amet feugiat elit.</p>
+
+
+
+		<!-- Links to external docs -->
+		<div id="ext-links-tab">
+			<a href="#"><i class="fas fa-globe"></i></a> 
+			<a href="#"><i class="far fa-file-alt"></i></a> 
+			<a href="#"><i class="fab fa-github"></i></a>
+		</div>
+
 	</div>
 
-	<div class="col-6">
-		<h4>Current Price</h4>
-		<h5>£ {{vm.cryptoCurrency.price_gbp | number:2}}</h5>
-		<br>
 
-		<h4>Circulating Supply</h4>
-		<h5>{{vm.cryptoCurrency.available_supply}} {{vm.cryptoCurrency.symbol}}</h5>
-		<br>
 
-		<h4>Market Cap</h4>
-		<h5>£ {{vm.cryptoCurrency.market_cap_gbp}}</h5>
+	<div class="col-12 col-md-6">
+		<div id="info-panel">
+
+			<div class="info-block mt-5">
+				<div class="info-header">Current Price</div>
+				<div class="info-value">£ {{vm.cryptoCurrency.price_gbp | number:2}}
+					<span class="ml-3"  ng-class="vm.setPercentChangeStyle(vm.cryptoCurrency.percent_change_24h)" id="percentage-change">
+						{{vm.cryptoCurrency.percent_change_24h}}%
+					</span>
+				</div>
+			</div>
+
+			<div class="info-block">
+				<div class="info-header">Circulating Supply</div>
+				<div class="info-value">{{vm.cryptoCurrency.available_supply | number}} {{vm.cryptoCurrency.symbol}}</div>
+			</div>
+
+
+			<div class="info-block">
+				<div class="info-header">Market Cap</div>
+				<div class="info-value">£ {{vm.cryptoCurrency.market_cap_gbp | number:2}}</div>
+			</div>
+
+
+
+
+		</div>
 
 	</div>
 </div>
+
+
+
+

@@ -5,7 +5,7 @@
 angular.module("CryptoBase").controller("CurrencyDetails", currencyDetails);
 
 
-function currencyDetails(getCryptoDetails, setSource) {
+function currencyDetails(getCryptoDetails, setSource,setPercentStyle) {
 	var vm = this;
 	vm.cryptoCurrency = getCryptoDetails[0];
 
@@ -14,6 +14,11 @@ function currencyDetails(getCryptoDetails, setSource) {
 	vm.getLogoSrc = function(logoName){
 		return setSource.setImageSource(logoName);
 	}
+
+
+	vm.setPercentChangeStyle =  function(value){
+		return setPercentStyle.setStyle(value);
+	};
 
 
 };
