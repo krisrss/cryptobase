@@ -113,6 +113,10 @@ p{
     color: white;
 }
 
+#ext-links-tab :visited{
+    color: white;
+}
+
 #ext-links-tab :nth-child(even){
     display: inline-block;
     margin-left: 30px;
@@ -120,39 +124,34 @@ p{
 
 }
 
-
 #info-panel{
     text-align: left;
     color: white;
-    width: 360px;
-    margin:0 auto;
+    width: 430px;
+    margin: auto;
 }
 
 #percentage-change{
     font-size: 25px;
 }
 
-
-
 .info-header{
     font-size: 20px;
 }
 
 .info-value{
-    font-size: 40px;
+    font-size: 34px;
 }
 
+.info-block{
+    margin-bottom: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
+#select-list{
+    width: 80px;
+    margin: 0 auto;
+    color: red;
+}
 
 
 /* Boostrap overrides */

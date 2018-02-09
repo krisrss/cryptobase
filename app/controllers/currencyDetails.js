@@ -5,10 +5,13 @@
 angular.module("CryptoBase").controller("CurrencyDetails", currencyDetails);
 
 
-function currencyDetails(getCryptoDetails, setSource,setPercentStyle) {
+function currencyDetails(getCryptoDetails, setSource,setPercentStyle,cryptoGet) {
 	var vm = this;
-	vm.cryptoCurrency = getCryptoDetails[0];
 
+	vm.cryptoCurrency = getCryptoDetails[0];
+	
+	vm.setCurrentPrice = vm.cryptoCurrency.price_gbp;
+	vm.setMarketCap = vm.cryptoCurrency.market_cap_gbp;
 
 
 	vm.getLogoSrc = function(logoName){
@@ -21,7 +24,29 @@ function currencyDetails(getCryptoDetails, setSource,setPercentStyle) {
 	};
 
 
-};
+    vm.currencyTypes = ["GBP","USD","JPY","EUR"];
 
+    vm.userSelect = vm.currencyTypes[0];
+
+
+    vm.loadData = function (id) {
+    	cryptoGet.getSingleCurrency(id,vm.userSelect)
+			.then(function(data) {
+				vm.cryptoCurrency = data[0];
+
+				vm.setCurrentPrice = vm.cryptoCurrency['price_' + vm.userSelect.toLowerCase()];
+
+				vm.setMarketCap = vm.cryptoCurrency['market_cap_' + vm.userSelect.toLowerCase()];
+
+
+			}
+		);
+    }
+
+
+
+
+
+}; 
 
 }());

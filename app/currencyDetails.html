@@ -32,9 +32,9 @@
 	<div class="col-12 col-md-6">
 		<div id="info-panel">
 
-			<div class="info-block mt-5">
+			<div class="info-block mt-2">
 				<div class="info-header">Current Price</div>
-				<div class="info-value">£ {{vm.cryptoCurrency.price_gbp | number:2}}
+				<div class="info-value">{{vm.userSelect}} - {{vm.setCurrentPrice | number :3}}
 					<span class="ml-3"  ng-class="vm.setPercentChangeStyle(vm.cryptoCurrency.percent_change_24h)" id="percentage-change">
 						{{vm.cryptoCurrency.percent_change_24h}}%
 					</span>
@@ -49,11 +49,13 @@
 
 			<div class="info-block">
 				<div class="info-header">Market Cap</div>
-				<div class="info-value">£ {{vm.cryptoCurrency.market_cap_gbp | number:2}}</div>
+				<div class="info-value">{{vm.userSelect}} - {{vm.setMarketCap | number :3}}</div>
 			</div>
 
 
-
+			<div class="form-group mb-3" id="select-list">
+				<select  class="form-control" ng-model="vm.userSelect" ng-options="item for item in vm.currencyTypes" ng-change="vm.loadData(vm.cryptoCurrency.id)"></select>
+			</div>
 
 		</div>
 

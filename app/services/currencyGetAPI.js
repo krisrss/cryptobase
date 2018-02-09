@@ -9,8 +9,8 @@ var cryptoGet = function($http) {
         })
     };
 
-    var getSingleCurrency = function(currencyId){
-    	return $http.get("https://api.coinmarketcap.com/v1/ticker/"+ currencyId +"/?convert=GBP&limit=1")
+    var getSingleCurrency = function(cryptoId,currencyName){
+    	return $http.get("https://api.coinmarketcap.com/v1/ticker/"+ cryptoId +"/?convert="+currencyName+"&limit=1")
     	.then(function(response){
     		return response.data;
     	})
