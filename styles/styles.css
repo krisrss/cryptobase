@@ -49,7 +49,8 @@ p{
 }
 
 .fa-arrow-up{
-    margin-right: 4px;
+    margin-right: -3px;
+    margin-left: 3px;
 }
 
 
@@ -63,7 +64,8 @@ p{
     content: "\f063";
 }
 .fa-arrow-down{
-    margin-right: 4px;
+    margin-right: -3px;
+    margin-left: 3px;
 }
 
 
@@ -103,6 +105,9 @@ p{
     color: white;
     margin: 0 auto;
     width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 #ext-links-tab > a{
@@ -124,15 +129,16 @@ p{
 
 }
 
+
 #info-panel{
     text-align: left;
     color: white;
-    width: 430px;
-    margin: auto;
+    width: 340px;
+    margin: 0 auto;
 }
 
 #percentage-change{
-    font-size: 25px;
+    font-size: 26px;
 }
 
 .info-header{
@@ -140,7 +146,7 @@ p{
 }
 
 .info-value{
-    font-size: 34px;
+    font-size: 26px;
 }
 
 .info-block{
@@ -149,8 +155,56 @@ p{
 
 #select-list{
     width: 80px;
-    margin: 0 auto;
-    color: red;
+}
+
+/* Media Queries */
+@media (max-width: 340px) {
+    .card-percents{
+        display: block;
+        margin-top: 10px;
+    }
+
+    .fa-arrow-up,.fa-arrow-down{
+        margin:0;
+    }
+
+    .card-title{
+        font-size: 20px;
+    }
+
+    #info-panel{
+        width: 250px;
+    }
+
+    #percentage-change{
+        font-size: 21px;
+    }
+
+    .info-header{
+        font-size: 15px;
+    }
+
+    .info-value{
+        font-size: 21px;
+    }
+
+    #ext-links-tab > a{
+        font-size: 18px;
+    }
+
+}
+
+
+.card-values{
+    font-size: 17px;
+}
+
+.card-block{
+    margin: 35px;
+}
+
+#text-wrapper{
+    margin: 0 8%;
 }
 
 

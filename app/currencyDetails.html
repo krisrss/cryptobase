@@ -1,6 +1,6 @@
 
 
-<div class="row justify-content-center mt-5">
+<div class="row mt-5">
 
 
 
@@ -14,7 +14,7 @@
 			<span>{{vm.cryptoCurrency.rank}}</span>
 		</div>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id libero dui. Donec id imperdiet sapien. Aenean nunc velit, blandit et efficitur nec, iaculis at nisi. Nam id ex erat. Pellentesque eget tortor arcu. Nulla imperdiet interdum sagittis. Suspendisse id dapibus ante, sit amet feugiat elit.</p>
+		<p id="text-wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id libero dui. Donec id imperdiet sapien. Aenean nunc velit, blandit et efficitur nec, iaculis at nisi. Nam id ex erat.</p>
 
 
 
@@ -29,12 +29,12 @@
 
 
 
-	<div class="col-12 col-md-6">
+	<div class="col-12 col-md-6 align-items-center justify-content-center" id="wrapper">
 		<div id="info-panel">
 
 			<div class="info-block mt-2">
 				<div class="info-header">Current Price</div>
-				<div class="info-value">{{vm.userSelect}} - {{vm.setCurrentPrice | number :3}}
+				<div class="info-value">{{vm.userSelect}} - {{vm.setCurrentPrice | number :2}}
 					<span class="ml-3"  ng-class="vm.setPercentChangeStyle(vm.cryptoCurrency.percent_change_24h)" id="percentage-change">
 						{{vm.cryptoCurrency.percent_change_24h}}%
 					</span>
@@ -49,7 +49,7 @@
 
 			<div class="info-block">
 				<div class="info-header">Market Cap</div>
-				<div class="info-value">{{vm.userSelect}} - {{vm.setMarketCap | number :3}}</div>
+				<div class="info-value">{{vm.userSelect}} - {{vm.setMarketCap | number}}</div>
 			</div>
 
 
