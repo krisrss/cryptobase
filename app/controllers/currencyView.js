@@ -2,7 +2,7 @@
 "use strict";
 angular.module("CryptoBase").controller("CurrencyView", currencyView);
 
-function currencyView(cryptoGet,setSource,setPercentStyle) {
+function currencyView(cryptoGet,setPercentStyle) {
 	var vm = this;
 	var cryptoListSize = 8;
 
@@ -14,10 +14,18 @@ function currencyView(cryptoGet,setSource,setPercentStyle) {
 		}
 	);
 
+	// Retrives static data from local JSON file
+	cryptoGet.getStaticData()
+		.then(function(data) {
+			vm.getStaticData = data;
+		}
+	);
 
-	vm.getLogoSrc = function(logoName){
-		return setSource.setImageSource(logoName);
-	}
+
+	vm.getLogo = function(currencyName){
+		return vm.getStaticData[0][currencyName].logo;
+	};
+
 
 
 	vm.setPercentChangeStyle =  function(value){

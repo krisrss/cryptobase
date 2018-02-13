@@ -16,9 +16,17 @@ var cryptoGet = function($http) {
     	})
     };
 
+    var getStaticData = function(){
+        return $http.get("app/other/staticCurrencyData.json")
+            .then(function(response){
+                return response.data;
+            })
+    };
+
     return {
         getCurrencyList : getCurrencyList,
-        getSingleCurrency : getSingleCurrency
+        getSingleCurrency : getSingleCurrency,
+        getStaticData : getStaticData
 
     }
 

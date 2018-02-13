@@ -138,7 +138,8 @@ p{
 }
 
 #percentage-change{
-    font-size: 26px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .info-header{
@@ -177,7 +178,7 @@ p{
     }
 
     #percentage-change{
-        font-size: 21px;
+        font-size: 16px;
     }
 
     .info-header{
@@ -185,7 +186,7 @@ p{
     }
 
     .info-value{
-        font-size: 21px;
+        font-size: 20px;
     }
 
     #ext-links-tab > a{
