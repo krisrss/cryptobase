@@ -55,6 +55,27 @@
             "git": "https://github.com/stellar",
             "description": "A platform that aims to facilitate moving currency quickly, reliably and almost no cost by connecting banks, payments systems and people through the Stellar network.",
             "logo" : "images/xlm.png"
+        },
+        "eos": {
+            "url": "https://eos.io",
+            "docs": "https://github.com/EOSIO/eos/wiki",
+            "git": "https://github.com/EOSIO/eos",
+            "description": "EOS is a blockchain platform for the development of decentralized applications (dapps), similar to Ethereum in function. It makes dapp development easy by providing an operating-system-like set of services and functions that dapps can make use of.",
+            "logo" : "images/eos.png"
+        },
+        "iota": {
+            "url": "https://www.iota.org",
+            "docs": "https://iota.readme.io",
+            "git": "https://github.com/iotaledger",
+            "description": "IOTA is a revolutionary new transactional settlement and data transfer layer for the Internet of Things. It's based on a new distributed ledger, the Tangle, which overcomes the inefficiencies of current Blockchain designs and introduces a new way of reaching consensus in a decentralized peer-to-peer system.",
+            "logo" : "images/miota.png"
+        },
+        "monero": {
+            "url": "https://getmonero.org",
+            "docs": "https://monerobase.com/w/images/d/d0/CryptonoteWhitepaper.pdf",
+            "git": "https://github.com/monero-project/monero",
+            "description": "Monero (XMR) is an open-source cryptocurrency created in April 2014 that focuses on privacy and decentralization that runs on Windows, macOS, Linux, Android, iOS, and FreeBSD. Monero uses a public ledger to record transactions while new units are created through a process called mining.",
+            "logo" : "images/xmr.png"
         }
     }
 ]
