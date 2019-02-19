@@ -7,7 +7,7 @@ It's a real time app, that displays top 8 cryptocurrencies, based on their overa
 ## Features
 * :hammer: Developed, using AngularJS (1.x) framework and routed by <a href="https://github.com/angular-ui/ui-router" >ui-router</a>
 * :iphone: Responsive and mobile friendly, thanks to Bootstrap framework
-* :chart_with_upwards_trend: Real-time data, obtained from a public cryptocurrency API <a href="https://coinmarketcap.com" >CoinMarketCap</a>
+* :chart_with_upwards_trend: Real-time data, obtained from a public cryptocurrency API <a href="https://min-api.cryptocompare.com" >CryptoCompare</a>
 * :computer: 'Deployed' using GitHub Pages
 
 ## Demo
