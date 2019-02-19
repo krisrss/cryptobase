@@ -4,11 +4,10 @@ angular.module("CryptoBase").controller("CurrencyView", currencyView);
 
 function currencyView(cryptoGet,setPercentStyle) {
 	var vm = this;
-	var cryptoListSize = 8;
 
 
   	// Retrives data from API
-	cryptoGet.getCurrencyList(cryptoListSize)
+	cryptoGet.getCurrencyList()
 		.then(function(data) {
 			vm.cryptoCurrency = data;
 		}

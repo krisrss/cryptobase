@@ -1,22 +1,20 @@
 <div class="row mt-5">
 
 	<div class="col-12 col-md-6">
-		<img class="big-logo" ng-src="{{vm.getStaticData(vm.cryptoCurrency.id).logo}}" alt="Logo">
-		<span id="crypto-header">{{vm.cryptoCurrency.name}}</span>
-
-
+		<img class="big-logo" ng-src="{{vm.getStaticData(vm.cryptoCurrency.CoinInfo.FullName).logo}}" alt="Logo">
+		<span id="crypto-header">{{vm.cryptoCurrency.CoinInfo.FullName}}</span>
 		<div id="crypto-rank">
 			<span>Rank</span>
-			<span>{{vm.cryptoCurrency.rank}}</span>
+			<span>{{vm.setRank}}</span>
 		</div>
 
-		<p id="text-wrapper">{{vm.getStaticData(vm.cryptoCurrency.id).description}}</p>
+		<p id="text-wrapper">{{vm.getStaticData(vm.cryptoCurrency.CoinInfo.FullName).description}}</p>
 
 		<!-- Links to external docs -->
 		<div id="ext-links-tab">
-			<a ng-href="{{vm.getStaticData(vm.cryptoCurrency.id).url}}"><i class="fas fa-globe"></i></a> 
-			<a ng-href="{{vm.getStaticData(vm.cryptoCurrency.id).docs}}"><i class="far fa-file-alt"></i></a> 
-			<a ng-href="{{vm.getStaticData(vm.cryptoCurrency.id).git}}"><i class="fab fa-github"></i></a>
+			<a ng-href="{{vm.getStaticData(vm.cryptoCurrency.CoinInfo.FullName).url}}"><i class="fas fa-globe"></i></a> 
+			<a ng-href="{{vm.getStaticData(vm.cryptoCurrency.CoinInfo.FullName).docs}}"><i class="far fa-file-alt"></i></a> 
+			<a ng-href="{{vm.getStaticData(vm.cryptoCurrency.CoinInfo.FullName).git}}"><i class="fab fa-github"></i></a>
 		</div>
 
 	</div>
@@ -26,22 +24,22 @@
 
 			<div class="info-block mt-2">
 				<div class="info-header">Current Price</div>
-				<div class="info-value">{{vm.userSelect}} - {{vm.setCurrentPrice | number :2}}
-					<span class="ml-3"  ng-class="vm.setPercentChangeStyle(vm.cryptoCurrency.percent_change_24h)" id="percentage-change">
-						{{vm.cryptoCurrency.percent_change_24h}}%
+				<div class="info-value">{{vm.cryptoCurrency.DISPLAY[vm.userSelect].PRICE}}
+					<span class="ml-3"  ng-class="vm.setPercentChangeStyle(vm.cryptoCurrency.DISPLAY[vm.userSelect].CHANGEPCT24HOUR)" id="percentage-change">
+						{{vm.cryptoCurrency.DISPLAY[vm.userSelect].CHANGEPCT24HOUR}}%
 					</span>
 				</div>
 			</div>
 
 			<div class="info-block">
 				<div class="info-header">Circulating Supply</div>
-				<div class="info-value">{{vm.cryptoCurrency.available_supply | number}} {{vm.cryptoCurrency.symbol}}</div>
+				<div class="info-value">{{vm.cryptoCurrency.DISPLAY[vm.userSelect].SUPPLY}}</div>
 			</div>
 
 
 			<div class="info-block">
 				<div class="info-header">Market Cap</div>
-				<div class="info-value">{{vm.userSelect}} - {{vm.setMarketCap | number}}</div>
+				<div class="info-value">{{vm.cryptoCurrency.DISPLAY[vm.userSelect].MKTCAP}}</div>
 			</div>
 
 

@@ -1,102 +1,109 @@
 [
     {
-        "bitcoin": {
-            "url": "https://github.com/bitcoin/",
+        "Bitcoin": {
+            "url": "https://bitcoin.org/en/",
             "docs": "https://bitcoin.org/bitcoin.pdf",
-            "git": "https://bitcoin.org/en/",
+            "git": "https://github.com/bitcoin/",
             "description": "The first decentralized peer-to-peer payment network in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, all operating independently of a central bank.",
             "logo" : "images/btc.png"
         },
-        "ethereum": {
+        "Ethereum": {
             "url": "https://www.ethereum.org",
             "docs": "https://github.com/ethereum/wiki/wiki/White-Paper",
             "git": "https://github.com/ethereum",
             "description": "An open-source, public, blockchain-based computing platform that enables developers to build and deploy decentralized applications. Ether (ETH), the crypto token that fuels the Ethereum network acts as a tradeable cryptocurrency and is used to pay for transaction fees and services on the network.",
             "logo" : "images/eth.png"
         },
-        "ripple": {
+        "XRP": {
             "url": "https://ripple.com",
             "docs": "https://ripple.com/files/ripple_consensus_whitepaper.pdf",
             "git": "https://github.com/ripple",
             "description": "Both a digital currency (XRP) and a distributed real-time payment protocol within which that currency is transferred. Ripple's distributed technology aims to enable banks to send real-time international payments across networks; to meet growing demands for faster, low-cost, on-demand global payment services.",
             "logo" : "images/xrp.png"
         },
-        "bitcoin-cash": {
+        "Bitcoin Cash": {
             "url": "https://www.bitcoincash.org",
             "docs": "https://www.investopedia.com/terms/b/bitcoin-cash.asp",
             "git": "https://github.com/zquestz/bitcoincash",
             "description": "A decentralized peer-to-peer payment network that came into existence as a result of a hard fork from the original bitcoin blockchain. Bitcoin Cash emerged after some of the leading backers disagreed on how to take Bitcoin further and are utilizing a new proposal that consists of a new transaction type and an increase in block limit size.",
             "logo" : "images/bch.png"
         },
-        "cardano": {
+        "Cardano": {
             "url": "https://www.cardanohub.org/en/home/",
             "docs": "https://www.cardanohub.org/en/academic-papers/",
             "git": "https://github.com/input-output-hk/cardano-sl/",
             "description": "A decentralized blockchain application that aims to develop a research-driven smart contract platform as well as the digital currency named Ada.",
             "logo" : "images/ada.png"
         },
-        "litecoin": {
+        "Litecoin": {
             "url": "https://litecoin.org",
             "docs": "https://hacked.com/litecoin-underrated-currency-crypto-bucket/",
             "git": "https://github.com/litecoin-project",
             "description": "An open-source peer-to-peer cryptocurrency that uses the scrypt proof of work algorithm as opposed to Bitcoin's hashing algorithm. Litecoin was originally created to improve upon Bitcoin by speeding up transaction confirmations.",
             "logo" : "images/ltc.png"
         },
-        "neo": {
+        "Neo": {
             "url": "https://neo.org",
             "docs": "https://github.com/neo-project/neo/wiki",
             "git": "https://github.com/neo-project",
             "description": "China's first original and open-source public blockchain. Initially known as Antshares, Neo aims to support multiple types of digital assets as well as allow users to establish smart contracts to enhance and enrich the functions of said digital assets.",
             "logo" : "images/neo.png"
         },
-        "stellar": {
+        "Stellar": {
             "url": "https://www.stellar.org",
             "docs": "https://www.stellar.org/papers/stellar-consensus-protocol.pdf",
             "git": "https://github.com/stellar",
             "description": "A platform that aims to facilitate moving currency quickly, reliably and almost no cost by connecting banks, payments systems and people through the Stellar network.",
             "logo" : "images/xlm.png"
         },
-        "eos": {
+        "EOS": {
             "url": "https://eos.io",
             "docs": "https://github.com/EOSIO/eos/wiki",
             "git": "https://github.com/EOSIO/eos",
             "description": "EOS is a blockchain platform for the development of decentralized applications (dapps), similar to Ethereum in function. It makes dapp development easy by providing an operating-system-like set of services and functions that dapps can make use of.",
             "logo" : "images/eos.png"
         },
-        "iota": {
+        "Iota": {
             "url": "https://www.iota.org",
             "docs": "https://iota.readme.io",
             "git": "https://github.com/iotaledger",
             "description": "IOTA is a revolutionary new transactional settlement and data transfer layer for the Internet of Things. It's based on a new distributed ledger, the Tangle, which overcomes the inefficiencies of current Blockchain designs and introduces a new way of reaching consensus in a decentralized peer-to-peer system.",
             "logo" : "images/miota.png"
         },
-        "monero": {
+        "Monero": {
             "url": "https://getmonero.org",
             "docs": "https://monerobase.com/w/images/d/d0/CryptonoteWhitepaper.pdf",
             "git": "https://github.com/monero-project/monero",
             "description": "Monero (XMR) is an open-source cryptocurrency created in April 2014 that focuses on privacy and decentralization that runs on Windows, macOS, Linux, Android, iOS, and FreeBSD. Monero uses a public ledger to record transactions while new units are created through a process called mining.",
             "logo" : "images/xmr.png"
         },
-        "tether": {
+        "Tether": {
             "url": "https://tether.to/",
             "docs": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf",
             "git": "https://tether.to/",
             "description": "Tether is a blockchain-based cryptocurrency whose cryptocoins in circulation are backed by an equivalent amount of traditional fiat currencies, like the dollar, the euro or the Japanese yen, which are held in a designated bank account.",
             "logo" : "images/usdt.png"
         },
-        "bitcoin-sv": {
+        "Bitcoin SV": {
             "url": "https://bitcoinsv.io/",
             "docs": "https://bitcoinsv.io/",
             "git": "https://github.com/bitcoin-sv/bitcoin-sv",
             "description": "The declared goal of the project is to realize alleged vision of the creator of Bitcoin known as Satoshi Nakamoto by restoring the features of the original bitcoin protocol and by enabling unlimited sized blocks. Bitcoin SV is endorsed by Australian computer scientist Craig Wright.",
             "logo" : "images/bsv.png"
         },
-        "tron": {
+        "TRON": {
             "url": "https://tron.network/index?lng=en",
             "docs": "https://developers.tron.network/docs",
             "git": "https://github.com/tronprotocol",
             "description": "Tronix is the official currency of TRON, which aims to be a decentralized entertainment content sharing platform eventually leveraging blockchain and peer-to-peer (p2p) network technology.",
             "logo" : "images/trx.png"
+        },
+        "Binance Coin": {
+            "url": "https://www.binance.com/en",
+            "docs": "https://www.binance.com/resources/ico/Binance_WhitePaper_en.pdf",
+            "git": "https://github.com/binance-exchange",
+            "description": " Binance Coin is the crypto-coin issued by Binance exchange, and trades with the BNB symbol. Binance coin runs on the Ethereum blockchain with ERC 20 standard, and has a strict limit of maximum 200 million BNB tokens.",
+            "logo" : "images/bnb.png"
         }
     }
 ]

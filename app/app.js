@@ -28,7 +28,7 @@ cryptoBase.config(["$stateProvider","$urlRouterProvider",
 				getCryptoDetails: function(cryptoGet, $stateParams){
 					var currencyId = $stateParams.currencyId;
 					var defaulthCurrency = "GBP";
-					return cryptoGet.getSingleCurrency(currencyId,defaulthCurrency);
+					return cryptoGet.getSingleCurrency(defaulthCurrency);
 				},
 
 				
