@@ -42,7 +42,7 @@
             "description": "An open-source peer-to-peer cryptocurrency that uses the scrypt proof of work algorithm as opposed to Bitcoin's hashing algorithm. Litecoin was originally created to improve upon Bitcoin by speeding up transaction confirmations.",
             "logo" : "images/ltc.png"
         },
-        "Neo": {
+        "NEO": {
             "url": "https://neo.org",
             "docs": "https://github.com/neo-project/neo/wiki",
             "git": "https://github.com/neo-project",
@@ -102,8 +102,30 @@
             "url": "https://www.binance.com/en",
             "docs": "https://www.binance.com/resources/ico/Binance_WhitePaper_en.pdf",
             "git": "https://github.com/binance-exchange",
-            "description": " Binance Coin is the crypto-coin issued by Binance exchange, and trades with the BNB symbol. Binance coin runs on the Ethereum blockchain with ERC 20 standard, and has a strict limit of maximum 200 million BNB tokens.",
+            "description": "Binance Coin is the crypto-coin issued by Binance exchange, and trades with the BNB symbol. Binance coin runs on the Ethereum blockchain with ERC 20 standard, and has a strict limit of maximum 200 million BNB tokens.",
             "logo" : "images/bnb.png"
+        },
+        "Everex": {
+            "url": "https://www.everex.io/",
+            "docs": "https://blog.everex.io/an-introduction-to-everex-2b6b992b7055",
+            "git": "https://github.com/EverexIO",
+            "description": "Everex is a blockchain technology provider offering global money transfer, payment and currency exchange solutions to financial and non-financial institutions worldwide.",
+            "logo" : "images/evx.png"
+        },
+        "Huobi Token": {
+            "url": "https://www.hbg.com/en-us/ht/",
+            "docs": "https://www.hbg.com/word/HB10-EN.pdf",
+            "git": "https://github.com/huobiapi",
+            "description": "Huobi Group developed HT based on the token system issued and managed through blockchain and it can be used inside Huobi as well as the multiple scenarios of Huobi ecosystem.",
+            "logo" : "images/ht.png"
+        },
+        "QTUM": {
+            "url": "https://qtum.org/en",
+            "docs": "https://www.circle.com/marketing/pdfs/research/circle-research-qtum.pdf",
+            "git": "https://github.com/qtumproject",
+            "description": "Qtum is a cryptocurrency that combines ethereum’s smart contract functionality with bitcoin’s security to create a coin that is suitable for adoption by large organizations.",
+            "logo" : "images/qtum.png"
         }
+
     }
 ]
