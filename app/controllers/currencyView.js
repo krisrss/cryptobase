@@ -9,7 +9,19 @@ function currencyView(cryptoGet,setPercentStyle) {
   	// Retrives data from API
 	cryptoGet.getCurrencyList()
 		.then(function(data) {
-			vm.cryptoCurrency = data;
+			
+			var dataList = data;
+			
+			for(var i = 0; i < dataList.length; i++)
+			{
+				if(data[i].CoinInfo.FullName === "CryptoRiyal")
+				{
+					dataList.splice(i, 1);
+				}
+
+			}
+
+			vm.cryptoCurrency = dataList;
 		}
 	);
 
