@@ -14,11 +14,10 @@ function currencyView(cryptoGet,setPercentStyle) {
 			
 			for(var i = 0; i < dataList.length; i++)
 			{
-				if(data[i].CoinInfo.FullName === "CryptoRiyal")
+				if(data[i].CoinInfo.FullName === "CryptoRiyal" || data[i].CoinInfo.FullName === "Crypto.com Chain Token")
 				{
 					dataList.splice(i, 1);
 				}
-
 			}
 
 			vm.cryptoCurrency = dataList;
