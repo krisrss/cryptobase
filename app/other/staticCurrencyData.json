@@ -125,6 +125,13 @@
             "git": "https://github.com/qtumproject",
             "description": "Qtum is a cryptocurrency that combines ethereum’s smart contract functionality with bitcoin’s security to create a coin that is suitable for adoption by large organizations.",
             "logo" : "images/qtum.png"
+        },
+        "Aion": {
+            "url": "https://aion.network/",
+            "docs": "https://aion.network/media/en-aion-network-technical-introduction.pdf",
+            "git": "https://github.com/aionnetwork",
+            "description": "Aion is both a Canadian multi-tier blockchain 3.0 platform focused on interoperability between other blockchains, and the coin that fuels tokenized network transactions. The AION coin is used for value and data exchanges, enabling a smart-contract network similar to Ethereum and NEO.",
+            "logo" : "images/aion.png"
         }
 
     }
