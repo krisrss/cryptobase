@@ -5,14 +5,14 @@
 angular.module("CryptoBase").controller("CurrencyDetails", currencyDetails);
 
 
-function currencyDetails(getCryptoDetails,setPercentStyle,cryptoGet,currencyData,$stateParams) {
+function currencyDetails(getCryptoDetails,setPercentStyle,cryptoGet,currencyData,$stateParams,setCurrencyBlacklist) {
 	var vm = this;
 	var currencyId = $stateParams.currencyId.toUpperCase();
 	var currencyList = [];
+	var filteredList = setCurrencyBlacklist.setBlacklist(getCryptoDetails);
 
-
-	for (var i = 0; i < getCryptoDetails.length; i++) {
-		var item = getCryptoDetails[i];
+	for (var i = 0; i < filteredList.length; i++) {
+		var item = filteredList[i];
 		currencyList.push(item.CoinInfo.Name)
 	}
 
@@ -21,7 +21,7 @@ function currencyDetails(getCryptoDetails,setPercentStyle,cryptoGet,currencyData
 	vm.setRank = currencyIndex + 1;
 
 
-	vm.cryptoCurrency = getCryptoDetails[currencyIndex];
+	vm.cryptoCurrency = filteredList[currencyIndex];
 
 
 

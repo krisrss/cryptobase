@@ -2,25 +2,15 @@
 "use strict";
 angular.module("CryptoBase").controller("CurrencyView", currencyView);
 
-function currencyView(cryptoGet,setPercentStyle) {
+function currencyView(cryptoGet,setPercentStyle,setCurrencyBlacklist) {
 	var vm = this;
 
 
   	// Retrives data from API
 	cryptoGet.getCurrencyList()
 		.then(function(data) {
-			
 			var dataList = data;
-			
-			for(var i = 0; i < dataList.length; i++)
-			{
-				if(data[i].CoinInfo.FullName === "CryptoRiyal" || data[i].CoinInfo.FullName === "Crypto.com Chain Token")
-				{
-					dataList.splice(i, 1);
-				}
-			}
-
-			vm.cryptoCurrency = dataList;
+			vm.cryptoCurrency = setCurrencyBlacklist.setBlacklist(dataList);
 		}
 	);
 
