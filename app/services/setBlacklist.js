@@ -9,7 +9,10 @@
                 
                 for(var i = 0; i < dataList.length; i++)
                 {
-                    if(dataList[i].CoinInfo.FullName === "Crypto.com Chain Token" || dataList[i].CoinInfo.FullName === "Aion" || dataList[i].CoinInfo.FullName === "Baer Chain")
+                    if(dataList[i].CoinInfo.FullName === "Crypto.com Chain Token" 
+                    || dataList[i].CoinInfo.FullName === "Aion" 
+                    || dataList[i].CoinInfo.FullName === "Baer Chain" 
+                    || dataList[i].CoinInfo.FullName === "FlowChainCoin")
                     {
                         continue;
                     }
