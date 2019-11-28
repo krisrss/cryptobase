@@ -12,7 +12,8 @@
                     if(dataList[i].CoinInfo.FullName === "Crypto.com Chain Token" 
                     || dataList[i].CoinInfo.FullName === "Aion" 
                     || dataList[i].CoinInfo.FullName === "Baer Chain" 
-                    || dataList[i].CoinInfo.FullName === "FlowChainCoin")
+                    || dataList[i].CoinInfo.FullName === "FlowChainCoin"
+                    || dataList[i].CoinInfo.FullName === "DDAM")
                     {
                         continue;
                     }
