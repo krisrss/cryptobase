@@ -13,7 +13,16 @@
                     || dataList[i].CoinInfo.FullName === "Aion" 
                     || dataList[i].CoinInfo.FullName === "Baer Chain" 
                     || dataList[i].CoinInfo.FullName === "FlowChainCoin"
-                    || dataList[i].CoinInfo.FullName === "DDAM")
+                    || dataList[i].CoinInfo.FullName === "DDAM"
+                    || dataList[i].CoinInfo.FullName === "Gaps Chain"
+                    || dataList[i].CoinInfo.FullName === "Hyperion"
+                    || dataList[i].CoinInfo.FullName === "Homeros"
+                    || dataList[i].CoinInfo.FullName === "PlayFuel"
+                    || dataList[i].CoinInfo.FullName === "Chainlink"
+                    || dataList[i].CoinInfo.FullName === "CTAGtoken"
+                    || dataList[i].CoinInfo.FullName === "NewYork Exchange"
+                    || dataList[i].CoinInfo.FullName === "Elamachain"
+                    || dataList[i].CoinInfo.FullName === "Thorenext")
                     {
                         continue;
                     }
