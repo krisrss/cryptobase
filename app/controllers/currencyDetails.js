@@ -43,7 +43,7 @@ function currencyDetails(getCryptoDetails,setPercentStyle,cryptoGet,currencyData
     vm.loadData = function () {
     	cryptoGet.getSingleCurrency(vm.userSelect)
 			.then(function(data) {
-				vm.cryptoCurrency = data[currencyIndex];
+				vm.cryptoCurrency = setCurrencyBlacklist.setBlacklist(data)[currencyIndex];
 			}
 		);
     }
