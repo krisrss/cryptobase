@@ -22,7 +22,8 @@
                     || dataList[i].CoinInfo.FullName === "CTAGtoken"
                     || dataList[i].CoinInfo.FullName === "NewYork Exchange"
                     || dataList[i].CoinInfo.FullName === "Elamachain"
-                    || dataList[i].CoinInfo.FullName === "Thorenext")
+                    || dataList[i].CoinInfo.FullName === "Thorenext"
+                    || dataList[i].CoinInfo.FullName === "HedgeTrade")
                     {
                         continue;
                     }
