@@ -24,7 +24,8 @@
                     || dataList[i].CoinInfo.FullName === "Elamachain"
                     || dataList[i].CoinInfo.FullName === "Thorenext"
                     || dataList[i].CoinInfo.FullName === "HedgeTrade"
-                    || dataList[i].CoinInfo.FullName === "TNC Coin")
+                    || dataList[i].CoinInfo.FullName === "TNC Coin"
+                    || dataList[i].CoinInfo.FullName === "Compound")
                     {
                         continue;
                     }
