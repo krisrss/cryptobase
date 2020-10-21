@@ -27,7 +27,8 @@
                     || dataList[i].CoinInfo.FullName === "TNC Coin"
                     || dataList[i].CoinInfo.FullName === "Compound"
                     || dataList[i].CoinInfo.FullName === "Polkadot"
-                    || dataList[i].CoinInfo.FullName === "Uniswap Protocol Token")
+                    || dataList[i].CoinInfo.FullName === "Uniswap Protocol Token"
+                    || dataList[i].CoinInfo.FullName === "TitanSwap")
                     {
                         continue;
                     }
