@@ -30,7 +30,8 @@
                     || dataList[i].CoinInfo.FullName === "Uniswap Protocol Token"
                     || dataList[i].CoinInfo.FullName === "TitanSwap"
                     || dataList[i].CoinInfo.FullName === "HEX"
-                    || dataList[i].CoinInfo.FullName === "Thorecoin")
+                    || dataList[i].CoinInfo.FullName === "Thorecoin"
+                    || dataList[i].CoinInfo.FullName === "Bitcoin ABC")
                     {
                         continue;
                     }
