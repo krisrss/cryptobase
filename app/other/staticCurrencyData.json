@@ -132,6 +132,20 @@
             "git": "https://github.com/aionnetwork",
             "description": "Aion is both a Canadian multi-tier blockchain 3.0 platform focused on interoperability between other blockchains, and the coin that fuels tokenized network transactions. The AION coin is used for value and data exchanges, enabling a smart-contract network similar to Ethereum and NEO.",
             "logo" : "images/aion.png"
+        },
+        "Solana": {
+            "url": "https://solana.com/",
+            "docs": "https://docs.solana.com/",
+            "git": "https://github.com/solana-labs/solana",
+            "description": "The first obvious question is what Solana is. Solana is a blockchain platform specifically designed to host decentralized applications. It is similar to other leading dApp blockchains like Ethereum and Cardano.",
+            "logo" : "images/sol.png"
+        },
+        "Dogecoin": {
+            "url": "https://dogecoin.com/",
+            "docs": "https://github.com/dogecoin/dogecoin/blob/master/README.md",
+            "git": "https://github.com/dogecoin/dogecoin",
+            "description": "Dogecoin (DOGE) is a peer-to-peer, open-source cryptocurrency. It is considered an altcoin and an almost sarcastic meme coin. Launched in December 2013, Dogecoin has the image of a Shiba Inu dog as its logo.",
+            "logo" : "images/doge.png"
         }
 
     }

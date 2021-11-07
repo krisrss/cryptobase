@@ -31,7 +31,9 @@
                     || dataList[i].CoinInfo.FullName === "TitanSwap"
                     || dataList[i].CoinInfo.FullName === "HEX"
                     || dataList[i].CoinInfo.FullName === "Thorecoin"
-                    || dataList[i].CoinInfo.FullName === "Bitcoin ABC")
+                    || dataList[i].CoinInfo.FullName === "Bitcoin ABC"
+                    || dataList[i].CoinInfo.FullName === "Terra"
+                    || dataList[i].CoinInfo.FullName === "Axie Infinity Shards")
                     {
                         continue;
                     }
